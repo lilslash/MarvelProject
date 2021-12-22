@@ -5,5 +5,5 @@
 <li>Technologies used - Bootstrap, jquerry, JavaScript etc...</li>
 <li>How to use it</li>
 <li>Screenshots</li>
-<li>link to the live website</li>
+<li><a href="https://lilslash.github.io/MarvelProject/">Link to the live site</a></li>
 </ul>
