@@ -1,12 +1,10 @@
-// api fetch for omdb//
-var apiUrl = 'http://www.omdbapi.com/?t=thor&apikey=c952a60b'
+// api fetch for omdb//\
 var HeroMovie = $('#heroName').val()
-var HeroInfo = $('#heroName').val()
 var apiKey = 'c952a60b'
-var apiMovieUrl = 'http://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
+var apiMovieUrl = 'https://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
 
 var moviePicker = function () {
-    var apiMovieUrl = 'http://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
+    var apiMovieUrl = 'https://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
     
     fetch(apiMovieUrl)
     .then(function (response) {

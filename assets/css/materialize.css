@@ -9433,3 +9433,6 @@ input[type=range]::-ms-thumb {
     margin: auto;
     padding-bottom: 5px;
   }
+  .searchBarColor {
+      background-color:chartreuse
+  }
