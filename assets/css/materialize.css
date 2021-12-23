@@ -9423,7 +9423,13 @@ input[type=range]::-ms-thumb {
         text-align: center;
         margin-top: 1.2rem;
     }
-    .searchBarColor{
-    background: #1100100;}
     
-}   
+    
+}  
+.logoSize {
+    display: block;
+    max-width: 50%;
+    height: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+  }
