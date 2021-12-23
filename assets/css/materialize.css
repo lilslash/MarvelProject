@@ -9432,7 +9432,11 @@ input[type=range]::-ms-thumb {
     height: 50%;
     margin: auto;
     padding-bottom: 5px;
+<<<<<<< HEAD
   }
   .searchBarColor {
       background-color:chartreuse
+=======
+    padding-top: 5px;
+>>>>>>> b25f365c0ebd1020a71cdf92ebe8d60e6e23b6ac
   }
