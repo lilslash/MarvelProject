@@ -27,7 +27,6 @@ var clickEventHandler = function(event){
     var timeStamp = Date.now();
     console.log(timeStamp);
     moviePicker(HeroMovie)
-    marvelMovie(HeroInfo)
 };
 
 $('.btn').on('click', clickEventHandler)
