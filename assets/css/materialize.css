@@ -9432,4 +9432,5 @@ input[type=range]::-ms-thumb {
     height: 50%;
     margin: auto;
     padding-bottom: 5px;
+    padding-top: 5px;
   }
