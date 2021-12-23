@@ -841,11 +841,12 @@
 }
 
 .fantastic-four-blue {
-    background-color: #315e70 !important;
+    background-color: #000050 !important;
+    background-image: linear-gradient(to top, #000050, rgb(7, 7, 7));
 }
 
 .fantastic-four-card-bg {
-    background-color: #000042 !important;
+    background-color: #9b4304 !important;
 }
 
 .light-blue-text.text-accent-1 {
@@ -4936,7 +4937,7 @@ small {
 .card {
     position: relative;
     margin: 0.5rem 0 1rem 0;
-    background-color: #fff;
+    background-color: #bddeec;
     -webkit-transition: -webkit-box-shadow .25s;
     transition: -webkit-box-shadow .25s;
     transition: box-shadow .25s;
