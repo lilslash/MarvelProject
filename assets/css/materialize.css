@@ -9432,11 +9432,46 @@ input[type=range]::-ms-thumb {
     height: 50%;
     margin: auto;
     padding-bottom: 5px;
-<<<<<<< HEAD
   }
-  .searchBarColor {
-      background-color:chartreuse
-=======
-    padding-top: 5px;
->>>>>>> b25f365c0ebd1020a71cdf92ebe8d60e6e23b6ac
+  .resultBody{
+    color: white;
+    /* background-image: url("assets/images/background.jpeg"); */
+    background-repeat: repeat;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-top: 50px;
   }
+  
+ .jumbotron{
+  
+    background-color: #000050 !important;
+    background-image: radial-gradient(#000050 30%, rgb(7, 7, 7));
+    background-repeat: no-repeat, repeat;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-top: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 100px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  .cards{
+      display: flex;
+justify-content: center;
+align-items: center;
+  }
+.navbar-custom {
+    background-color: black;
+color: black;
+}
+.searchBtn {
+text-decoration: none;
+border-radius: 10px;
+background-color: #808080 !important;
+    background-image: radial-gradient(#808080 30%, rgb(7, 7, 7));
+    color:yellow
+    
+}

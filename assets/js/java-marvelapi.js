@@ -40,7 +40,7 @@ var marvelMovie = function (movie) {
     //Change API key back to Max's
     // change marvel hash var to max's hash and change api key in marvelChar var back to max's as well
     var marvelHash = 'b56dd3530e78ec9a6094c3da8597037f'
-    var marvelChar = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=01d40b7334fd2e097e7d2d18865f107d&hash='+ marvelHash + '&name=thor';
+    var marvelChar = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=01d40b7334fd2e097e7d2d18865f107d&hash='+ marvelHash + '&name='+ HeroMovie;
     
     fetch(marvelChar)
     .then(function (response) {
