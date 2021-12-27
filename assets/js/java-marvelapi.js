@@ -2,6 +2,7 @@
 var HeroMovie = $('#heroName').val()
 var apiKey = 'c952a60b'
 var apiMovieUrl = 'https://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
+var marvelResults = document.getElementById
 var moviePicker = function () {
     var apiMovieUrl = 'https://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
     
@@ -44,8 +45,8 @@ var marvelMovie = function (movie) {
     fetch(marvelChar)
     .then(function (response) {
         if (response.ok) {
-            response.json().then(function (data) {
-            console.log(data)      
+            response.json().then(function (comics) {
+            console.log(comics)      
             });
         } 
     })
@@ -66,4 +67,5 @@ var fantastic = function (mrFantastic) {
     })
     
 }
-$('#fantastic').on('click', fantastic)
+
+
