@@ -2,7 +2,6 @@
 var HeroMovie = $('#heroName').val()
 var apiKey = 'c952a60b'
 var apiMovieUrl = 'https://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
-
 var moviePicker = function () {
     var apiMovieUrl = 'https://www.omdbapi.com/?t='+HeroMovie+'&apikey='+apiKey
     
@@ -52,4 +51,19 @@ var marvelMovie = function (movie) {
     })
     
 }; 
+var fantastic = function (mrFantastic) {
+    var apiMarvel = 'https://gateway.marvel.com/v1/public/characters?ts=1640114818783&apikey=98605e29ebd8faf1543d213980ac0570&hash=ebdb11d7b51bbc6d766bb9f9edbae1ac&limit=100'
 
+    var marvelHash = 'b56dd3530e78ec9a6094c3da8597037f'
+    var marvelChar = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=01d40b7334fd2e097e7d2d18865f107d&hash='+ marvelHash + '&name='+ Mr. Fantastic;
+    fetch(marvelChar)
+    .then(function (response) {
+        if (response.ok) {
+            response.json().then(function (data) {
+            console.log(data)      
+            });
+        } 
+    })
+    
+}
+$('#fantastic').on('click', fantastic)

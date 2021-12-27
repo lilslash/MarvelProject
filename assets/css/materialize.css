@@ -842,7 +842,7 @@
 
 .fantastic-four-blue {
     background-color: #000050 !important;
-    background-image: linear-gradient(to top, #000050, rgb(7, 7, 7));
+    background-image: radial-gradient(#000050 30%, rgb(7, 7, 7));
 }
 
 .fantastic-four-card-bg {
@@ -9474,4 +9474,9 @@ background-color: #808080 !important;
     background-image: radial-gradient(#808080 30%, rgb(7, 7, 7));
     color:yellow
     
+}
+.searchBarColor {
+    background-color: #000050 !important;
+    background-image: radial-gradient(#000050 30%, rgb(7, 7, 7));
+
 }
