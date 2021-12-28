@@ -65,7 +65,12 @@ var fantastic = function (mrFantastic) {
             });
         } 
     })
-    
 }
+
+
+// Add Event Listener Buttons to Each Character to Query MarvelAPI
+// Verify which character name or hero name brings back the most information
+// Decide how you want that information appended to the page. 
+// Decide if you want to continue with Fantastic Four or make it a more general Marvel API
 
 
