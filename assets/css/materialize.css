@@ -9481,3 +9481,10 @@ background-color: #808080 !important;
     background-image: radial-gradient(#000050 30%, rgb(7, 7, 7));
 
 }
+.hide {
+    visibility: hidden;
+    
+}
+.visible {
+    visibility: visible;
+}

@@ -70,6 +70,7 @@ var fantastic = function (mrFantastic) {
 var heroBtn = document.querySelector("#hero-btn");
 var heroCardsEl = document.querySelector('.herocards');
 var heroInformation = document.querySelector('#heroInformation');
+var movieBtn = document.createElement("button")
 
 heroCardsEl.addEventListener('click', function(event) {
     event.preventDefault();
@@ -98,8 +99,11 @@ heroCardsEl.addEventListener('click', function(event) {
 
                 heroInformation.appendChild(heroImage)
                 heroInformation.appendChild(comicList)
+                movieBtn.innerHTML = "Movie"
+                heroInformation.appendChild(movieBtn)
 
                 console.log(characterInfo)
+                heroCardsEl.classList.add('hide')
                 });
             } 
         })
