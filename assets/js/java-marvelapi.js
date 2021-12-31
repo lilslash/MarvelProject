@@ -30,7 +30,7 @@ var clickEventHandler = function(event){
     marvelMovie();
 };
 
-$('.btn').on('click', clickEventHandler)
+//$('.btn').on('click', clickEventHandler)
 
 
 var marvelMovie = function (movie) {
@@ -66,6 +66,46 @@ var fantastic = function (mrFantastic) {
         } 
     })
 }
+
+var heroBtn = document.querySelector("#hero-btn");
+var heroCardsEl = document.querySelector('.herocards');
+var heroInformation = document.querySelector('#heroInformation');
+
+heroCardsEl.addEventListener('click', function(event) {
+    event.preventDefault();
+    if(event.target.value !== undefined) {
+        var hero = event.target.value;
+        var marvelHash = 'b56dd3530e78ec9a6094c3da8597037f'
+        var marvelChar = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=01d40b7334fd2e097e7d2d18865f107d&hash='+ marvelHash + '&name='+ hero;
+        fetch(marvelChar)
+        .then(function (response) {
+            if (response.ok) {
+                heroInformation.innerHTML = "";
+                response.json().then(function (data) {
+                var characterInfo = data.data.results[0]
+                var heroImage = document.createElement('img');
+                var comicList = document.createElement('ul');
+
+                
+                heroImage.setAttribute('src', characterInfo.thumbnail.path + '.jpg')
+                heroImage.setAttribute('height', '500px');
+
+                for(var i = 0; i < characterInfo.comics.items.length; i++) {
+                    var comicListItem = document.createElement('li');
+                    comicListItem.textContent = characterInfo.comics.items[i].name + 'More Info: ' + characterInfo.comics.items[i].name
+                    comicList.appendChild(comicListItem);
+                }
+
+                heroInformation.appendChild(heroImage)
+                heroInformation.appendChild(comicList)
+
+                console.log(characterInfo)
+                });
+            } 
+        })
+    }
+
+})
 
 
 // Add Event Listener Buttons to Each Character to Query MarvelAPI
