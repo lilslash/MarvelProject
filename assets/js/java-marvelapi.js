@@ -70,7 +70,8 @@ var fantastic = function (mrFantastic) {
 var heroBtn = document.querySelector("#hero-btn");
 var heroCardsEl = document.querySelector('.herocards');
 var heroInformation = document.querySelector('#heroInformation');
-var movieBtn = document.createElement("button")
+var movieBtn = document.createElement("button");
+var moreBtn = document.createElement("button");
 
 heroCardsEl.addEventListener('click', function(event) {
     event.preventDefault();
@@ -100,10 +101,13 @@ heroCardsEl.addEventListener('click', function(event) {
                 heroInformation.appendChild(heroImage)
                 heroInformation.appendChild(comicList)
                 movieBtn.innerHTML = "Movie"
+                moreBtn.innerHTML = "More about the character"
                 heroInformation.appendChild(movieBtn)
+                heroInformation.appendChild(moreBtn)
 
                 console.log(characterInfo)
                 heroCardsEl.classList.add('hide')
+                
                 });
             } 
         })
@@ -111,6 +115,10 @@ heroCardsEl.addEventListener('click', function(event) {
 
 })
 
+moreBtn.addEventListener('click',function(event){
+
+    window.location.href = 'https://www.marvel.com/characters/mister-fantastic/in-comics/profile'
+})
 
 // Add Event Listener Buttons to Each Character to Query MarvelAPI
 // Verify which character name or hero name brings back the most information

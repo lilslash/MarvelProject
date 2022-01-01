@@ -9488,3 +9488,19 @@ background-color: #808080 !important;
 .visible {
     visibility: visible;
 }
+.heroInformation {
+    font-size: 25px;
+    text-align: left;
+    color: red;
+    font-family: fantasy;
+    background-position: cover;
+    flex:auto
+    
+}
+li {
+    padding-top: 20px;
+}
+/* button {
+    padding: 10px;
+    margin: 10px;
+} */
