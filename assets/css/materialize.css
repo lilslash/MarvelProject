@@ -9437,9 +9437,8 @@ input[type=range]::-ms-thumb {
   }
   .resultBody{
     color: white;
-    /* background-image: url("assets/images/background.jpeg"); */
     background-repeat: repeat;
-    background-position: center; /* Center the image */
+    background-position: center; 
     background-size: cover; /* Resize the background image to cover the entire container */
     padding-top: 50px;
   }
@@ -9491,7 +9490,6 @@ background-color: #808080 !important;
 }
 .heroInformation {
     font-size: 25px;
-    text-align: ;
     color: red;
     font-family: fantasy;
     background-color:#000050 ;
@@ -9547,7 +9545,15 @@ h1{
     
     
 }
-.movieBtn:hover {
+.movie05Btn:hover {
+    color: red;
+    background-color: transparent;
+}
+.movie07Btn:hover {
+    color: red;
+    background-color: transparent;
+}
+.movie15Btn:hover {
     color: red;
     background-color: transparent;
 }
