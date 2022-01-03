@@ -14,105 +14,74 @@
 </head>
 
 <body>
-    <div class="center fantastic-four-blue">
-        <img class="img-fluid logoSize" src="assets/images/fantastic 4.png" alt="Banner Image">
+    <div class="center fantastic-four-blue" id=homePage>
+        <a href=""><img class="img-fluid logoSize" src="assets/images/fantastic 4.png" alt="Banner Image"></a>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid searchBarColor">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input id="heroName" class="form-control me-2" type="search" placeholder="Search Hero Name" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
 
-    <div class="herocards fantastic-four-card-bg">
+    <div class="herocards fantastic-four-card-bg fantastic-four-blue">
         <div class="row">
             <div class="col m4">
                 <div class="card">
                     <img class="card-img-top " src="assets/images/mrfantastic.jpeg " alt="Card image cap "style="height: 950px">
                     <div class="card-body ">
-                        <button type="button1" id="hero-btn" value="Mr. Fantastic" class="btn btn-info">Info</button>
+                        <button type="button1" id="hero-btn" value="Mr. Fantastic" class="btn btn-info waves-effect waves-light">Info</button>
                         <h5 class="card-title ">Mr. Fantastic</h5>
                         
                         <p class="card-text ">As Mr. Fantastic, Reed Richards utilizes his scientific brilliance and pliable form to make a difference in the world with what he knows, and explores the unknown to learn everything else he doesn’t.
                         </p>
                     </div>
-                    <div class="card-body ">
-                        <a id= "fantastic" href="" class="card-link ">Card link</a>
-                        <a href="# " class="card-link ">Another link</a>
-                    </div>
+                   
                 </div>
             </div>
             <div class="col m4 ">
                 <div class="card">
                     <img class="card-img-top " src="assets/images/invisiblewoman.jpeg " alt="Card image cap "style="height: 950px">
                     <div class="card-body ">
-                        <button id="hero-btn" value="Invisible Woman" type="button2" class="btn btn-info">Info</button>
+                        <button id="hero-btn" value="Invisible Woman" type="button2" class="btn btn-info waves-effect waves-light">Info</button>
                         <h5 class="card-title ">Invisible woman</h5>
                         <p class="card-text ">Susan Storm Richards overcame losing her parents at a young age to become a motherly figure to her brother. After receiving superpowers, she co-founded the Fantastic Four and emerged as the single-most powerful member of the group.</p>
                     </div>
                     
-                    <div class="card-body ">
-                        <a href="# " class="card-link ">Card link</a>
-                        <a href="# " class="card-link ">Another link</a>
-                    </div>
+                  
                 </div>
             </div>
             <div class="col m4 ">
                 <div class="card ">
                     <img class="card-img-top " src="assets/images/humantorch.jpeg " alt="Card image cap "style="height: 950px">
                     <div class="card-body ">
-                        <button id="hero-btn" value="Human Torch" type="button3" class="btn btn-info">Info</button>
+                        <button id="hero-btn" value="Human Torch" type="button3" class="btn btn-info waves-effect waves-light">Info</button>
                         <h5 class="card-title ">Human Torch</h5>
                         <p class="card-text ">Johnny Storm yearns for adventure and frequently finds it either with the Fantastic Four, another super group, or by himself. With his fiery form, he can burn through just about any adversity and put a smile on it while he does.</p>
                     </div>
-                    <div class="card-body ">
-                        <a href="# " class="card-link ">Card link</a>
-                        <a href="# " class="card-link ">Another link</a>
-                    </div>
+                   
                 </div>
             </div>
             <div class="col m4 ">
                 <div class="card ">
                     <img class="card-img-top " src="assets/images/thething.jpeg " alt="Card image cap " style="height: 950px">
                     <div class="card-body ">
-                        <button type="button3" class="btn btn-info" id="hero-btn" value="Thing">Info</button>
+                        <button type="button3" class="btn btn-info waves-effect waves-light" id="hero-btn" value="Thing">Info</button>
                         <h5 class="card-title ">The Thing</h5>
                         <p class="card-text ">With his nearly-indestructible body and incredible strength and stamina, the Thing possess the ability to defend the innocent and crush evil, but also to help the Fantastic Four explore the unknown throughout the multiverse.p>
                     </div>
-                    <div class="card-body ">
-                        <a href="# " class="card-link ">Card link</a>
-                        <a href="# " class="card-link ">Another link</a>
-                    </div>
+                   
                 </div>
             </div>
         </div>
     </div>
 
-    <div style="background-image: url(assets/images/FF4.jpg);" class="heroInformation center" id="heroInformation">
+    <div  class="heroInformation center img-fluid" id="heroInformation">
 
     </div>
+    <footer id="movieBlk" class="">
+        <button class="btn movie05Btn" type="submit" name="action">Fantastic 4 (2005)
+          </button>
+        <button class="btn movie07Btn" type="submit" name="action">Fantastic 4 (2007)
+          </button>
+        <button class="btn movie15Btn" type="submit" name="action">Fantastic 4 (2015) 
+          </button>
+
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
