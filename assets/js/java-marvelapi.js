@@ -1,21 +1,4 @@
-// api fetch for omdb//\
-var HeroMovie = $('#heroName').val()
-var apiKey = 'c952a60b'
-var apiMovieUrl = 'https://www.omdbapi.com/?t=' + HeroMovie + '&apikey=' + apiKey
-var marvelResults = document.getElementById
-var moviePicker = function () {
-    var apiMovieUrl = 'https://www.omdbapi.com/?t=' + HeroMovie + '&apikey=' + apiKey
 
-    fetch(apiMovieUrl)
-        .then(function (response) {
-            if (response.ok) {
-                response.json().then(function (data) {
-                    console.log(data)
-                });
-            }
-        })
-
-};
 // grab for the heros name
 var clickEventHandler = function (event) {
     event.preventDefault();
@@ -146,7 +129,7 @@ movie05Btn.addEventListener('click', (event) => {
     var h2Directors = document.createElement('h2')
     h2Directors.appendChild(document.createTextNode('Director'))
     var apiKey = 'c952a60b';
-    var url = "http://www.omdbapi.com/?t=FANTASTIC+FOUR&apikey=" + apiKey;
+    var url = "https://www.omdbapi.com/?t=FANTASTIC+FOUR&apikey=" + apiKey;
     $.ajax({
         method: 'Get',
 
@@ -215,7 +198,7 @@ movie07Btn.addEventListener('click', (event) => {
     var h2Directors = document.createElement('h2')
     h2Directors.appendChild(document.createTextNode('Director'))
     var apiKey = 'c952a60b';
-    var url = "http://www.omdbapi.com/?t=FANTASTIC+FOUR&apikey=" + apiKey;
+    var url = "https://www.omdbapi.com/?t=FANTASTIC+FOUR&apikey=" + apiKey;
     $.ajax({
         method: 'Get',
 
@@ -284,7 +267,7 @@ movie15Btn.addEventListener('click', (event) => {
     var h2Directors = document.createElement('h2')
     h2Directors.appendChild(document.createTextNode('Directors'))
     var apiKey = 'c952a60b';
-    var url = "http://www.omdbapi.com/?t=FANTASTIC+FOUR&apikey=" + apiKey;
+    var url = "https://www.omdbapi.com/?t=FANTASTIC+FOUR&apikey=" + apiKey;
     $.ajax({
         method: 'Get',
 
